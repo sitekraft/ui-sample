@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Sample</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 40px 20px;
+      border-radius: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      font-size: 20px;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      background: #111;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>UI Sample</h1>
+
+  <div class="container">
+
+    <a href="homepage.html" class="card">Homepage</a>
+
+    <a href="productlisting.html" class="card">Product Listing</a>
+
+    <a href="detail.html" class="card">Product Detail</a>
+
+    <a href="checkout.html" class="card">Checkout</a>
+
+    <a href="about the brand.html" class="card">About the Brand</a>
+
+  </div>
+
+</body>
+</html>
