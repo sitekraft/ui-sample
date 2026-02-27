@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#560b0b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif-quote { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- TopNavBar Component -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">flare</span>
+<h2 class="text-xl font-bold tracking-widest uppercase font-display">Elégance</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Collections</a>
+<a class="text-sm font-medium text-primary uppercase tracking-widest" href="#">Heritage</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Craftsmanship</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Atelier</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="md:hidden p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section: Editorial Storytelling -->
+<section class="relative h-[90vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Cinematic editorial shot of luxury fabric draping in a dark studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYRjOpdkQAeI6U-eM5hU8OZowVnPD8u1hdqocaVQachGMajt40QxxM4HR4Ov9Cj5k9boHG60_YA6qClO8WYhHwrkXbnMKIwa9wvFk_ki9VXRWscUiO7qTZBJBd6Vfx-zqbQxNnIDsPK6ZX93z8tLAGaWWsK9W1jMpHermF4mvf-BqsIjGYbjsHbWQUytD2Jl3EG7cVj5BqPABbrB8pX1QMcyczaI4MSSgwibwOFC4mzUDpJ-vBD3rMlQpvhjtILvUsog0yuWiHqbk');">
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative h-full flex flex-col items-center justify-center text-center px-6">
+<span class="text-primary uppercase tracking-[0.3em] text-sm font-bold mb-6">Since 1924</span>
+<h1 class="serif-quote text-5xl md:text-8xl text-white max-w-4xl leading-tight">
+                    The Art of <br/> <span class="italic text-primary">Uncompromising</span> Silence.
+                </h1>
+<p class="mt-8 text-lg text-white/80 max-w-xl font-light leading-relaxed">
+                    A century of defining luxury through the lens of Florentine tradition and avant-garde craftsmanship.
+                </p>
+</div>
+</section>
+<!-- Brand Heritage Narrative -->
+<section class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h2 class="text-primary uppercase tracking-widest text-sm font-bold">Heritage</h2>
+<h3 class="serif-quote text-4xl md:text-5xl leading-tight">Born in Florence, <br/>Refined by Time.</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    Our journey began in a small atelier tucked away in the shadows of the Duomo. It was here that our founder, Alessandro Rossi, sought to marry the rugged durability of Tuscan leather with the ethereal softness of silk. 
+                </p>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    Today, Elégance remains a family-owned house, preserving the same hand-stitching techniques that made our first valise a masterpiece. Every piece we create is a bridge between the golden age of Italian tailoring and the minimalist future.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] rounded-lg overflow-hidden translate-y-12">
+<img class="w-full h-full object-cover grayscale" data-alt="Vintage black and white photo of a tailor at work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC51pqA4wPs5Sh-oOiIwOlkgI9lTCaUHfXkCxFTJsW5EuUDz8daM6d9nal7uNSCW3KRST7Byufg3-rn-kiF56456W6kkh7gghZFRgL6v7FCFg9leqEvvjgz95wJk5nQ6o3UQj4reC3F_P_1SwLZ043nUYhl5P00d_P2yjOF7pzBHSfhjNSK-qNJ_RSNdVtQ4ibrShOqgY_EpL3AaUr0PFrokqd2RDSHtsliaYk1119Rt2EYdnqHB3ftBz7W_BaY1gmhR-NuvWw7WNA"/>
+</div>
+<div class="aspect-[3/4] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern high-end retail interior with minimalist display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFC_JI0xlB0TZ3LNIeLUGNUaCCJ0dyrz0Q0oc4c0OIY0JK2rimJrrQd6lxy9dgyvcAL_43WIcTcyKJhhIGaX650KUnpbFyl99MrgNJyAs0CeSP6UxzDLWN3CcPgiSqYNfRPbPEMyF_ZaaK4cVAGvid684K0MNrC2ygv687hnxvJLaqJAaZQEhoY-3eEhr8fPrXpoBsrMywVWMPVfB6EjzD4CQLgttATC4In7gkiryNAib_4zB8nLdtKSHbKONws6MvwmKUezLFRZc"/>
+</div>
+</div>
+</section>
+<!-- Large Serif Quote -->
+<section class="bg-primary/5 py-32">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-8">format_quote</span>
+<blockquote class="serif-quote text-3xl md:text-6xl italic leading-snug text-slate-800 dark:text-slate-200">
+                    "Luxury is not about being noticed, it is about being remembered in the silence that follows."
+                </blockquote>
+<cite class="block mt-10 uppercase tracking-[0.2em] text-sm font-bold text-primary">— Creative Director, Sofia Rossi</cite>
+</div>
+</section>
+<!-- Craftsmanship Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-7">
+<div class="aspect-video rounded-xl overflow-hidden bg-primary/20">
+<img class="w-full h-full object-cover" data-alt="Close up of needlework and premium thread on dark fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkWhSp5kprf_ucgXtI3Uz7B842_LwvcuZG8lZrmnrIGgUMnvaPolKkl_6fv2Zl01DB7RNczzsv3_f2qBypaPKKhXmbJTyhQIXOezl6XKmRCH1AXmYpnihmWlY_T7s7qoan6TFGkGOLH7J8TUUAattMFCY0VDuHTb6-lR09U7D3-oQBUONWM1yLV6o_keYKRlyrChsKOVVWEt2qOs63B3LiJQ1xr61twsrZn3BF2etcePhBoe86uNUWI9r_R_ZGl9RofyUWzk5xgCA"/>
+</div>
+</div>
+<div class="md:col-span-5 pb-8">
+<h2 class="text-primary uppercase tracking-widest text-sm font-bold mb-6">The Atelier</h2>
+<h3 class="serif-quote text-4xl mb-6">Meticulous by Nature.</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
+                        Our artisans spend an average of 40 hours on a single evening gown. Each button is sourced from reclaimed mother-of-pearl, and every lining is hand-finished with our signature crimson silk.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold group" href="#">
+                        Explore Our Craft 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- High-Impact Gallery -->
+<section class="w-full overflow-hidden py-12">
+<div class="flex gap-4 overflow-x-auto px-6 no-scrollbar">
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Model wearing a deep red luxury coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ymUPFMS64N9zz8C4J9C0QTKkFZTpr8_gKip5B9DlQ4jGzGlAzxJcgpxpp_mYVjPeHYGdD4cErYo1JXTCjGu4SH-v8CnInfQCpuSiwNKMQUotkIxvmr7MCmGclXSm0Z41i3mCFGVoVQ_8KuJtrQmcDis4fAzjJVU6f94CFOS0ttrCuZEGXhnyq3FBtna4HfeiL8qnFHComQc1nx0ax5OpB0biFVYXvQBNNpkugkFAst4pfDm2xjg7v48qpA1iWqriZS2t99JpxDY"/>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="High-fashion editorial pose in minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdloWXWhp2McGTzqGaOSd81M-HFEZyLsnwbIm3pCP6Fjw4UrfdLlm086P2XiGGOXJj7v-fAieLs4yr8XbHMYAysJkdfJznDn_w0KbKg93zkgW2wL1lDhWAru8m6uol8xS4nQZD5Wt8yTY5Z_aXvTEi4Dg5nrfQ8NcRwjXarg-h5hCpnlMbr0OVwAeOjpqmtCdTxt8FIj_SzHMMOWqZb6MJdnjrHgEAnAwEh2ifo53OAX525j74bN2Tz56mI4Cz1t4GMmlqsB-Z6rw"/>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Macro detail of luxury leather bag texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDla0aWY3Y2icln0fkwdvHpdO8znT42MXDAuIBnzlbGIYFgJGd1m7mIBB2Fhfo-GUGUrYAhcJXiv32Sr1maff5ZP756HLC1n0DXPy2IySZJtGC9ArgsSpJMGFMVv78kqxzmIKumv_IRcegg6PMN8uM3602X6j1Km0rasuOSEllgyoHHvZUpWYp5nW6hXoCPUzp72Mr3xREhLWORPGpiKFNaZ9jckGCI0B2jbzWM5GikOyx9i7iZOtmM4DZ0Q2aWnizNPiflhryMhDc"/>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-xl overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dramatic lighting on evening wear silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsj5r80zDmM0HPYK7EVNTVhAE5P-dSHriMMwW9eaHRBB5_nEKGyqt_9aRSitxZVVK74U-uQLFgwiN3_dODQRlB4q44EC2cqIVucARN30IgfvqGwNloIV29B0c1dxMEVp2ab4niZzBNenbmIsKQ_IYd7yOiLAPwzHblb-X7KBtiJyG_FPg7cGhW_U8NfKJTMs9nqi2jrvCUYCbpRHjLKNYKqCwfqH_uyh42QN5CXQflqGtcjTYkYxjvEiupmkMYaLpy2f0866VmmBY"/>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Call to Action -->
+<section class="py-24 border-t border-primary/10">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h3 class="serif-quote text-4xl mb-6 italic">Join the Legacy.</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-10">Receive exclusive invitations to our private showings and seasonal lookbooks.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 bg-primary/5 border-primary/20 rounded-lg px-6 py-4 focus:ring-primary focus:border-primary" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-white font-bold px-8 py-4 rounded-lg uppercase tracking-widest hover:bg-primary/90 transition-colors">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark py-12 border-t border-primary/10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2 opacity-50">
+<span class="material-symbols-outlined text-primary">flare</span>
+<h2 class="text-sm font-bold tracking-widest uppercase font-display">Elégance</h2>
+</div>
+<div class="flex gap-8 text-xs uppercase tracking-widest font-medium opacity-60">
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">Journal</a>
+<a class="hover:text-primary transition-colors" href="#">Sustainability</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<p class="text-[10px] uppercase tracking-widest opacity-40">© 1924-2024 Elégance House of Fashion</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#560b0b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>LUXE | Product Detail</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2 text-primary dark:text-slate-100">
+<span class="material-symbols-outlined text-3xl">diamond</span>
+<h1 class="text-2xl font-black tracking-tighter uppercase">LUXE</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="#">Collections</a>
+<a class="text-sm font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="text-sm font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="#">Editorial</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center bg-primary/10 dark:bg-white/5 rounded-full px-4 py-1.5 border border-primary/10">
+<span class="material-symbols-outlined text-xl opacity-60">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48 placeholder:text-slate-500" placeholder="Search collection..." type="text"/>
+</div>
+<button class="relative p-2 hover:bg-primary/10 rounded-full transition-all">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] text-white">2</span>
+</button>
+<button class="p-2 hover:bg-primary/10 rounded-full transition-all">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-lg">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 lg:px-10 py-8 lg:py-16">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-8 text-xs font-bold uppercase tracking-widest opacity-60">
+<a href="#">Home</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a href="#">Womenswear</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary dark:text-primary/80">Evening Gowns</span>
+</nav>
+<div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+<!-- Left Gallery -->
+<div class="flex-1 space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="group relative overflow-hidden rounded-xl bg-primary/5 aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="High fashion model in asymmetric silk gown front view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCIztvwTxa_lrlYx0T9wv1wkAcNIwyeYDAgzi5LOBYnpZerdqlXBkKrKVXUoXrwEP757z9Z-H5HlH6VQPgmw8NL6bI6Dn175Q6qQQN7F1gr3awnxooFgkPMqAvI4RPa6qatyd_vukfrOGhz-hGuJzrtxEGmneNfA7g4Qv7sQNYjjIWjnl_6xG3om_wwxkn2G66RO7jdPYpNPIxZiHGG7QmGRQxJ8GUx6dmlohzfnEq6zWU4936Wsac_m9UH_XgjwHdBrwqpz7F0SQ")'></div>
+<div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/5 pointer-events-none flex items-center justify-center">
+<span class="bg-white/90 text-slate-900 px-4 py-2 rounded-full text-xs font-bold uppercase">Zoom View</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-primary/5 aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up detail of silk fabric texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxCT6EZf2SN62M8OXrh0ZOkZdpn2HcGVbyYCSOpZyCR68rhfhZX_e9TsGbqahwLAxsu-ovCIrxv24a1ne64u7poevhBAJ4Q8Sst1LkhBwEXs4m4zjTCOL8l3b9Ex8L8_n-tPgKXHR61jwZgYOM3iv4jCOyuFgONCKSFW415r2iyvFlmBxPAB8u_fII--jzFvT53UQHyfEtTpwJArTJfdqSi8oay5EiNyqMGFNg7HrK9kE6IXdnbSjJ-ook9o7vnB15K_Ol23jYI1Q")'></div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-primary/5 aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Back detail of designer evening gown" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPxkf1P_WvfW8Mm_E9E-WXbIsryjX1XJErhPaK-cKG3pB344zbhDSeKZnfY1ya0c04x6aGjIPWNWvIMjxBCGVbFq85Q5gjZPPLsNxlHdQiwL0QihXTqSwzL9iv-2F5J8DFoA--kIBap-6-naz5n1jfsvCe8zuMlAcS2ln6THsw6pl_AtVwsVTr7OAm_mLu2kr6DKvgQJw5bHKx6sZg0Rm6W4AjxG8H0BrFYJLbfelYeEk9B64WVncj0LF8I5NpiWiiVqA_13g8pNQ")'></div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-primary/5 aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Side profile showing silhouette of silk gown" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYNkFf6SjcksHnvPqVwDUvnZIg9klUBYVQD-M_AjzAroUtxQO8SjKDw4tpOwSQUN40okd-BoxdEdL6Iqmo6Yo08qZdB3Q-WOIegQvjC8boyZ-ojQAUJs4k1JN6AyN4l9vQbnUOLX7o2y-D7-YZLYzpW9BZm_H-v5m5pphb8NkNiYi8gipM2-d41dYXGekSwmlOrH7lJQUFEoV4zQGZxdY5kljUNIIpc0bPc2qTwjjFSDaDzojLww_H1tonnaHgzCg71Fj3MMOJoM4")'></div>
+</div>
+</div>
+</div>
+<!-- Right Panel (Sticky) -->
+<div class="w-full lg:w-[400px]">
+<div class="sticky top-32 space-y-8">
+<div>
+<p class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">Heritage Collection</p>
+<h2 class="text-4xl font-black leading-tight tracking-tight mb-4 uppercase">Asymmetric Silk Drapé Gown</h2>
+<div class="flex items-center justify-between">
+<p class="text-2xl font-light text-slate-600 dark:text-slate-400">$3,850.00</p>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star_half</span>
+<span class="text-xs font-bold ml-1 text-slate-500">(12)</span>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<p class="text-xs font-black uppercase tracking-widest">Select Size</p>
+<button class="text-xs font-bold text-primary underline">Size Guide</button>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-3 border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-all text-xs font-bold">FR 34</button>
+<button class="py-3 border-2 border-primary bg-primary/5 rounded text-xs font-bold text-primary">FR 36</button>
+<button class="py-3 border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-all text-xs font-bold">FR 38</button>
+<button class="py-3 border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-all text-xs font-bold">FR 40</button>
+<button class="py-3 border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-all text-xs font-bold">FR 42</button>
+<button class="py-3 border border-slate-200 dark:border-primary/20 rounded opacity-40 cursor-not-allowed text-xs font-bold line-through">FR 44</button>
+</div>
+</div>
+<div class="space-y-3">
+<button class="w-full bg-primary hover:bg-primary/90 text-white py-5 rounded-lg text-sm font-black uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2">
+                            Add to Shopping Bag
+                        </button>
+<button class="w-full border border-primary text-primary py-5 rounded-lg text-sm font-black uppercase tracking-[0.2em] hover:bg-primary/5 transition-all">
+                            Pre-Order for May
+                        </button>
+</div>
+<!-- Accordions -->
+<div class="divide-y divide-primary/10 border-t border-b border-primary/10">
+<div class="group py-4">
+<button class="w-full flex items-center justify-between text-left">
+<span class="text-xs font-black uppercase tracking-widest">Composition &amp; Care</span>
+<span class="material-symbols-outlined text-lg transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<div class="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-400 space-y-2">
+<p>• 100% Organic Mulberry Silk</p>
+<p>• Hand-draped in our Paris atelier</p>
+<p>• Dry clean only by specialists</p>
+</div>
+</div>
+<div class="group py-4">
+<button class="w-full flex items-center justify-between text-left">
+<span class="text-xs font-black uppercase tracking-widest">Shipping &amp; Returns</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+<div class="group py-4">
+<button class="w-full flex items-center justify-between text-left">
+<span class="text-xs font-black uppercase tracking-widest">Sustainability Impact</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-primary/5 rounded-xl border border-primary/10">
+<span class="material-symbols-outlined text-primary text-2xl">eco</span>
+<div>
+<p class="text-xs font-bold text-primary uppercase mb-1">Conscious Luxury</p>
+<p class="text-[10px] leading-tight opacity-70">This item supports sustainable manufacturing practices and ethical sourcing.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- You May Also Like -->
+<section class="mt-24">
+<div class="flex items-end justify-between mb-10">
+<h3 class="text-2xl font-black uppercase tracking-tight">You May Also Like</h3>
+<a class="text-xs font-bold border-b-2 border-primary pb-1 uppercase tracking-widest text-primary" href="#">View Collection</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="space-y-4 group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-primary/5 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Luxury leather accessory in dark burgundy" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQX-YUzqjbYfcu_uxDNdkVfE58PxwRjjbSnAKtVnAQD_Gtr4m76kiNl27OdfODQEl677Igj_Pd9rpTHgIBF5gKgyr0wu3MFfodMT8zB9_W1GgTLvUHSzQvJy8kfQgxQN6zdHYadt0Q6gfOmr8fDfkEkErO8kt8VPiDmimdFYUlQnSbiO82EIibbZOqgjCgZ9xW36K5jCE72vAT_ehWZeONVbWEDwJbo32hWl5KagRIJ_f3PDtTNJvZPT1SWBHHd3s_OuRtV1kFoFg")'></div>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-background-dark/90 rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest">Velvet Frame Clutch</h4>
+<p class="text-sm font-light opacity-60">$1,250.00</p>
+</div>
+</div>
+<div class="space-y-4 group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-primary/5 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Premium high heel sandals with minimalist design" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6TBRjSKTp4z0kXsZbzAiWTv3_VqzhX6zRHPeB4fKWZp96Hmy7xhfxKSSXvYc5jEnlb5igckhZED5S69ufr1PYzcHGz_33cdsYXLFiRGDThH4Jo51wu6rVKsPiJZQIzdL7uM0tJJ8kpWgJekobA1FblLSNVRpP5s_CqYEOR0mjJwtIHjCqXrcg6Aw60nRkkMXz1tv7eojV4QPJkkH8JyNFWiNiHwHDdeN8rnzJ5Srp69Li-NBGBgpFkRDGC6vUPKikBQa1Xv0YsHI")'></div>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-background-dark/90 rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest">Minimalist Stiletto</h4>
+<p class="text-sm font-light opacity-60">$980.00</p>
+</div>
+</div>
+<div class="space-y-4 group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-primary/5 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Gold and diamond earrings luxury jewelry" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAiZP_OHjYqtO908dG9pEVO1q59g7N7Bvu65_3uFGrXITEatSlw3DivpkrYHUEKqO4DB-7-QnpJgSa9FS80hVgg4dK3LnyLwOwaFb3G9HWJ8P6MjsExAWzFq_LfX5Cp_ZFQp1txo0UHVCsTvba4T1pzzNdeuJi_e54J41eBQtbiJJ8EyP2jC9PIhg70kxUzqzNvcVLQLfCj4SAoqBq3bSQe6VG_fb8Al2zdeNRB5gRntlMqBrdX5ewslzkVj5hJoswHz6gsj6Zbuvg")'></div>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-background-dark/90 rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest">Geometric Gold Drop</h4>
+<p class="text-sm font-light opacity-60">$2,400.00</p>
+</div>
+</div>
+<div class="space-y-4 group">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-primary/5 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Oversized wool coat in charcoal grey" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7lsIVObuN0mOL4dIT_aKLcLYnLfOrPJbngxLhXKg8tRqRukHfDNNjak_EaqolzTRhBxQqZeA8dxe7zM-SoKkmb-hAKZtu7oahv-RHnDn4rSwSQSX8YEjuUuABqq3v-RycgwxidQ95Hd5IDpkPZuk02GIetxqpTl8tpbBsmQuWti2sObQw-fLCngkFIRgjgAz-DzZ6-gJa8vgesy0p5Y6Qox6jYgvDpuY8ekgdy6ywtFMzzxWs-3Rp0Iof1D6zKtdF6zvV6vo1VU4")'></div>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-background-dark/90 rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-widest">Sculpted Wool Overcoat</h4>
+<p class="text-sm font-light opacity-60">$4,100.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-32 border-t border-primary/20 bg-primary/5 py-16 px-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+<h2 class="text-xl font-black tracking-tighter uppercase">LUXE</h2>
+</div>
+<p class="text-xs font-medium leading-loose opacity-60">
+                    Redefining high-fashion for the modern era. Hand-crafted in Paris since 1924.
+                </p>
+</div>
+<div>
+<h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6">Client Service</h5>
+<ul class="space-y-4 text-xs font-bold opacity-60">
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Track Your Order</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Store Locator</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Appointments</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6">The House</h5>
+<ul class="space-y-4 text-xs font-bold opacity-60">
+<li><a class="hover:text-primary transition-colors" href="#">Our History</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Legal</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6">Newsletter</h5>
+<p class="text-xs opacity-60 mb-4">Be the first to hear about new collections.</p>
+<div class="flex border-b border-primary/40 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-xs w-full px-0" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined text-primary">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] font-bold uppercase tracking-[0.1em] opacity-40">© 2024 LUXE ATELIER. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="opacity-60 hover:opacity-100" href="#"><span class="material-symbols-outlined text-xl">brand_family</span></a>
+<a class="opacity-60 hover:opacity-100" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="opacity-60 hover:opacity-100" href="#"><span class="material-symbols-outlined text-xl">public</span></a>
+</div>
+</div>
+</footer>
+</body></html>

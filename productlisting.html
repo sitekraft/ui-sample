@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXE | Ready-to-Wear Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#560b0b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">unfold_less</span>
+<h1 class="text-2xl font-black tracking-tighter text-primary">LUXE</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">New Arrivals</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Collections</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest text-primary" href="#">Women</a>
+<a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Men</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="pl-10 pr-4 py-2 bg-slate-100 dark:bg-primary/10 border-none rounded-full text-sm focus:ring-1 focus:ring-primary w-64" placeholder="Search collection..." type="text"/>
+</div>
+<button class="flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-xs font-bold bg-primary text-white rounded-full h-4 w-4 flex items-center justify-center">2</span>
+</button>
+<button class="flex items-center gap-1 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-6 lg:px-12 py-10">
+<!-- Breadcrumbs & Title -->
+<div class="mb-12">
+<nav class="flex items-center gap-2 text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-4">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined !text-[10px]">chevron_right</span>
+<a class="hover:text-primary" href="#">Women</a>
+<span class="material-symbols-outlined !text-[10px]">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100">Ready-to-Wear</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="text-5xl font-light tracking-tight mb-2">Ready-to-Wear</h2>
+<p class="text-slate-500 dark:text-slate-400 max-w-xl">Explore the Spring/Summer 2024 collection. A dialogue between classic silhouettes and contemporary artistic expression.</p>
+</div>
+<div class="flex items-center gap-4">
+<p class="text-xs uppercase tracking-widest text-slate-500">128 Products</p>
+<div class="relative group">
+<button class="flex items-center gap-2 px-6 py-3 border border-slate-200 dark:border-primary/20 rounded-full text-sm font-medium hover:bg-slate-50 dark:hover:bg-primary/5 transition-colors">
+                            Sort by: Featured
+                            <span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0">
+<div class="sticky top-32 space-y-10">
+<div>
+<h3 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Category</h3>
+<ul class="space-y-3">
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="rounded border-slate-300 dark:border-primary/30 text-primary focus:ring-primary bg-transparent" type="checkbox"/><span class="text-sm group-hover:text-primary transition-colors">Dresses</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input checked="" class="rounded border-slate-300 dark:border-primary/30 text-primary focus:ring-primary bg-transparent" type="checkbox"/><span class="text-sm group-hover:text-primary transition-colors text-primary font-medium">Outerwear</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="rounded border-slate-300 dark:border-primary/30 text-primary focus:ring-primary bg-transparent" type="checkbox"/><span class="text-sm group-hover:text-primary transition-colors">Knitwear</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="rounded border-slate-300 dark:border-primary/30 text-primary focus:ring-primary bg-transparent" type="checkbox"/><span class="text-sm group-hover:text-primary transition-colors">Tops</span></label></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Size</h3>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 text-xs border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-colors">XS</button>
+<button class="py-2 text-xs border border-primary bg-primary text-white rounded">S</button>
+<button class="py-2 text-xs border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-colors">M</button>
+<button class="py-2 text-xs border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-colors">L</button>
+<button class="py-2 text-xs border border-slate-200 dark:border-primary/20 rounded hover:border-primary transition-colors">XL</button>
+</div>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Color</h3>
+<div class="flex flex-wrap gap-3">
+<button class="w-6 h-6 rounded-full bg-slate-900 border border-slate-200 ring-2 ring-offset-2 ring-primary ring-offset-background-dark"></button>
+<button class="w-6 h-6 rounded-full bg-white border border-slate-200"></button>
+<button class="w-6 h-6 rounded-full bg-stone-400 border border-slate-200"></button>
+<button class="w-6 h-6 rounded-full bg-primary border border-slate-200"></button>
+</div>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Price Range</h3>
+<input class="w-full h-1 bg-slate-200 dark:bg-primary/20 rounded-lg appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex justify-between mt-4 text-xs font-mono text-slate-500">
+<span>$450</span>
+<span>$4,500</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-slate-100 dark:bg-primary/5 mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Fashion model in elegant long wool coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApAu0FmC7CSFZWhVpDw5IMp2mv35YHH64bwo7s9_3LrRXtW7-NzuSqH0F_Z7Cztm1I3-JdfPAc4BAf2lb7R1sFfschMhhDrhGZbnaHZPtTi7-aI_RQrRPNv424zN8ZdqVmfWvvNW0kF4NYDSO135Iqv2Gf6vvyx8rCfa9UEuvDBdmU4yMuaQT1PsnDY0i8eA_Sggj2ZzC-OEWoyFYu6S2iR48n2VmP83crw8f1djkCQ0uv85xqFAkHTXGDjJTRFgYgWjSH8pk1yOE"/>
+<button class="absolute top-4 right-4 p-2 bg-white/80 dark:bg-background-dark/80 backdrop-blur rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined !text-lg">favorite</span>
+</button>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-sm font-medium uppercase tracking-wider group-hover:text-primary transition-colors">Double-Breasted Wool Coat</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">$2,850</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-slate-100 dark:bg-primary/5 mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model posing in minimalist silk dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSPOzFPESWwTz1nCTpKdjCWoWt03uAU08U8viGGHnXuydnQ1TLS8VZidwm6JMdMPHXuJfEf-70ZrqZYzfCrnY0hJ9U-uzI00Q1g4BA_3cwdx81DvVEvPMKJtFkiRvVY71PkmEyHzGF74rYxYfhvW7P99eXnxBPywKpyNrdNdi6q8lplnaFA9Y7HWofpwesMMWrWP5hRm3cbx9RLQzFTdX0e1tHKeQTntZ38aTc0ruaA-J73y00plkA3jyB01IrsCXPDru0ZnPuK6s"/>
+<button class="absolute top-4 right-4 p-2 bg-white/80 dark:bg-background-dark/80 backdrop-blur rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined !text-lg text-primary fill-1">favorite</span>
+</button>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-sm font-medium uppercase tracking-wider group-hover:text-primary transition-colors">Silk Asymmetric Midi Dress</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">$1,450</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-slate-100 dark:bg-primary/5 mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing high-waisted tailored trousers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWOpwIwW8HhddRxVuZHJF_jGykPIxxPWvOYhZmGNA4tduutquweCtRdXj0WS-i8gkzEyF0-ULnInM_MvViIqmmLqWudco1DUwCCfoSFcn0Mlb-rT58PpkigWWb7z1MQcNC2MPRAEITITsSiKfuTA6iDRCQ3N5AHFh5gm2_53zXd3eD81kVKbrMk2alj9LBepm9bxwzgCeb4hjLhcQM-OemXwIQwC4F5aRTXCzFskdUOhI1gn8I4zdgesohjHxf1jQm1VmP_FkJsJs"/>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-sm font-medium uppercase tracking-wider group-hover:text-primary transition-colors">Tailored Pleated Trousers</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">$890</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-slate-100 dark:bg-primary/5 mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist streetwear styled luxury outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoRrIsYKm41BLVMnIBtwSrDoZucc5ylCb3rxZUYKGPirZ-4a8HnqJhyeacr3qFGDo0Bj13w5MEzD9jqy3h0gnn_kGRVmCfALfJGSSc_KN83OG0IhqPuJGtx6NRYgD2wb62tdD5jV-YPAvg6l9H-cJp5DQthrRRsZshwrNt5bZ7D2zfrFxLDC_E4dje1i48z_eTjZwFK9KJXSQcd0jy82sVkiBSwvYknO7L9O3Y_A7ov-aIWJwrl04XXPHSyYcx_VmYdcgbDTnCcws"/>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-sm font-medium uppercase tracking-wider group-hover:text-primary transition-colors">Cashmere Blend Knit Vest</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">$1,100</p>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-slate-100 dark:bg-primary/5 mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Detail shot of luxury leather accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGTh2fiV8OfGYcUeqYKDMLpay_WkQtByDrx6SL2sfaFovSHq1HMj-QqK9VVAFgJUvHNCxwh370lJadnSwoBUlDIcvWO_kplaB4dO54PRdCBw7OGNRB1zFdfIIJYpEIgUP1RWV1LNOWgeZAL4tLA1v_fBqxw__VsYwGimFlVa3smCeSbt1QbOX8Zs5EmCa9Y8cPLHbbuEtmENxeOW5MAw1cytXV0vt4mO7WsxdCy9nm1Zl98-KaKfrrfMe08r0th7exAybkkR22RnM"/>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-sm font-medium uppercase tracking-wider group-hover:text-primary transition-colors">Sculptural Leather Blazer</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">$3,200</p>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-slate-100 dark:bg-primary/5 mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High fashion editorial posing in evening wear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-C07vinMTJM1cyMpMXwZHVmlp9tOvbsrrjF8IhOVIhxrYqE9Al_6e7s0_a-bAVZDZlEmHmVV-WQidmg4kZ018_kkq23ycmXUctDBxNveUBBYmO6T_Z3bS9V0DYKzadkZuFj9Hrj6-X2y2XyKyw3d95ct0bjwigrJ7nyp1qXajiVde2WnOeT6Nd6krymY8-uNpSbWwQHVLTRxKGbW1pVR_IEjkF7wYzo4E8QrFCWVF6TjjS5A7ayEh4eaNYiiQPjj-Fw9iqfxxQYE"/>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-sm font-medium uppercase tracking-wider group-hover:text-primary transition-colors">Column Gown in Noir</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">$4,250</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-24 flex items-center justify-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-primary/20 rounded-full text-slate-400 hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white text-sm font-medium">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium hover:bg-primary/10 transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium hover:bg-primary/10 transition-colors">3</button>
+<span class="px-2">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-sm font-medium hover:bg-primary/10 transition-colors">12</button>
+</div>
+<button class="w-10 h-10 flex items-center justify-center border border-slate-200 dark:border-primary/20 rounded-full text-slate-400 hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-primary/20 mt-32 py-20 bg-slate-50 dark:bg-primary/5">
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">unfold_less</span>
+<h2 class="text-xl font-black tracking-tighter text-primary">LUXE</h2>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 leading-loose uppercase tracking-widest">
+                    Excellence in craftsmanship.<br/>Purity in design.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Service</h4>
+<ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Size Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Track Order</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Company</h4>
+<ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Heritage</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Newsletter</h4>
+<div class="flex">
+<input class="bg-transparent border-b border-slate-300 dark:border-primary/30 py-2 text-sm focus:ring-0 focus:border-primary flex-1" placeholder="Email address" type="email"/>
+<button class="material-symbols-outlined text-primary ml-2">trending_flat</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto px-6 lg:px-12 mt-20 pt-10 border-t border-slate-200 dark:border-primary/10 flex flex-col md:flex-row justify-between text-[10px] uppercase tracking-[0.2em] text-slate-400">
+<p>© 2024 Luxe Fashion Group. All rights reserved.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
